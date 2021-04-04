@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/api/v1/categories/")
+@RequestMapping(CategoryController.Base_URL)
 public class CategoryController {
 
+    public static final String Base_URL = "/api/v1/categories/";
     private final CategoryService categoryService;
 
     public CategoryController(CategoryService categoryService) {
